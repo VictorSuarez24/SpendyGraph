@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="/view/assets/css/login.css">
 </head>
 <body>
-   <div class="login">  
-    <h1>Login</h1>
-    <input type="password" name="password" id="password" placeholder="Password">
-    <input type="email" name="email" id="email" placeholder="Email">
-    <input type="submit" value="Login">
-   </div>
+   <form class="loginForm">  
+    <h1 class="title">Log in</h1>
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="submit" value="Log in">
+    <input type="button" value="Sign in" onclick="window.location.href='/view/signup.html'">
+   </form>
+   <script src="/view/assets/js/login.js"></script>
 </body>
 </html>
