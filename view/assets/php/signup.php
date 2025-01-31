@@ -1,6 +1,6 @@
 <?php
 // Incluye el archivo de conexión a la base de datos
-include '../backend/config/config.php'; // Asegúrate de tener tu conexión establecida correctamente
+include '../../../backend/config/config.php';// Asegúrate de tener tu conexión establecida correctamente
 
 if (isset($_POST["submit"])) { // Verifica si el formulario ha sido enviado
     // Obtén los datos del formulario
@@ -38,7 +38,7 @@ if (isset($_POST["submit"])) { // Verifica si el formulario ha sido enviado
                 if ($insert_sql->execute()) {
                     echo '<div>¡Registro exitoso! Ahora puedes iniciar sesión.</div>';
                     // Redirigir al login después del registro exitoso
-                    header("Location: login.html"); // Asegúrate de que login.html existe
+                    header("Location: ../../../view/login.html"); // Asegúrate de que login.html existe
                     exit(); // Detener el script después de la redirección
                 } else {
                     echo '<div>Error al registrar al usuario: ' . $conexion->error . '</div>';
