@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #2e004d;
+    background-color: #1e1e2f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,17 +46,19 @@ body{
 }
 
 .loginForm input[type="submit"]{
-    background: linear-gradient( 144deg, #b84dff 0%, #ebccff 100% );
+    background: linear-gradient(135deg, #1e88e5 0%, #4caf50 100%);
 }
 
 .loginForm input[type="button"]{
-    background: linear-gradient( 144deg, #ebccff 0%, #b84dff 100% );
+    background: linear-gradient(135deg, #4caf50 0%, #1e88e5 100%);
 }
 
 .loginForm input[type="submit"]:hover{
-    background: black;
+    background: linear-gradient(135deg, #388e3c 0%, #1565c0 100%);
+    transform: scale(1.05);
 }
 
 .loginForm input[type="button"]:hover{
-    background: black;
+    background: linear-gradient(135deg, #388e3c 0%, #1565c0 100%);
+    transform: scale(1.05);
 }
