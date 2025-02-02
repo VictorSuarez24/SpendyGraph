@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - SpendifyApp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="bg-blue-600 text-white p-6 rounded-md shadow-md">
+            <h1 class="text-2xl font-semibold">Bienvenido, Victor</h1>
+            <nav class="mt-4">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-lg hover:text-blue-300">Inicio</a></li>
+                    <li><a href="transactions.html" class="text-lg hover:text-blue-300">Transacciones</a></li>
+                    <li><a href="assets/php/logout.php" class="text-lg hover:text-blue-300">Cerrar sesión</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Dashboard -->
+        <section class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <h2 class="text-xl font-semibold">Total Gastado</h2>
+                <p id="totalSpent" class="text-3xl font-bold text-red-600">€0.00</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <h2 class="text-xl font-semibold">Total Ingresos</h2>
+                <p id="totalIncome" class="text-3xl font-bold text-green-600">€0.00</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <h2 class="text-xl font-semibold">Saldo Actual</h2>
+                <p id="currentBalance" class="text-3xl font-bold text-gray-700">€0.00</p>
+            </div>
+        </section>
+
+        <!-- Transacciones Recientes -->
+        <section class="mt-12">
+            <h2 class="text-2xl font-semibold mb-4">Transacciones Recientes</h2>
+            <table class="min-w-full bg-white rounded-lg shadow-md">
+                <thead>
+                    <tr class="bg-gray-200">
+                        <th class="py-3 px-4 text-left text-lg">Fecha</th>
+                        <th class="py-3 px-4 text-left text-lg">Descripción</th>
+                        <th class="py-3 px-4 text-left text-lg">Monto</th>
+                    </tr>
+                </thead>
+                <tbody id="transactionList">
+                    <!-- Las transacciones serán cargadas aquí -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
